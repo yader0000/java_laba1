@@ -1,6 +1,20 @@
 package org.example;
 
+/**
+ * Демонстрация работы класса IntegerContainer.
+ */
 public class Main {
+
+    /**
+     * Конструктор по умолчанию.
+     */
+    public Main() {}
+
+    /**
+     * Точка входа в программу.
+     *
+     * @param args аргументы командной строки
+     */
     public static void main(String[] args) {
         IntegerContainer container = new IntegerContainer();
 
