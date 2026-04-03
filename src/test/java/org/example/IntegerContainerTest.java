@@ -60,4 +60,16 @@ class IntegerContainerTest {
         }
         assertEquals(20, container.size());
     }
+
+    @Test
+    void removeShouldThrowOnInvalidIndex() {
+        container.add(1);
+        assertThrows(IndexOutOfBoundsException.class, () -> container.remove(5));
+    }
+
+    @Test
+    void getShouldThrowOnNegativeIndex() {
+        container.add(1);
+        assertThrows(IndexOutOfBoundsException.class, () -> container.get(-1));
+    }
 }
